@@ -1,0 +1,96 @@
+{
+  "$schema": "./schema/z3oa-items.schema.json",
+  "startingRoom": "Start Screen",
+  "startingNode": 1,
+  "startingItems": ["GreenMail"],
+  "startingFlags": [],
+  "startingLocks": [],
+  "startingResources": [
+    {"resource": "heartContainers", "maxAmount": 3},
+    {"resource": "bombs", "maxAmount": 0},
+    {"resource": "bombchus", "maxAmount": 0},
+    {"resource": "emberSeeds", "maxAmount": 0},
+    {"resource": "scentSeeds", "maxAmount": 0},
+    {"resource": "pegasusSeeds", "maxAmount": 0},
+    {"resource": "galeSeeds", "maxAmount": 0},
+    {"resource": "mysterySeeds", "maxAmount": 0}
+  ],
+  "implicitItems": ["GreenMail"],
+  "upgradeItems": [
+    {"name": "PowerBracelet"},
+    {"name": "PowerGlove"},
+    {"name": "WoodenShield"},
+    {"name": "IronShield"},
+    {"name": "MirrorShield"},
+    {"name": "ZorasFlippers"},
+    {"name": "MermaidSuit"},
+    {"name": "ZoraScale"},
+    {"name": "RocsFeather"},
+    {"name": "WoodenSword"},
+    {"name": "NobleSword"},
+    {"name": "MasterSword"},
+    {"name": "BiggoronsSword"},
+    {"name": "SeedSatchel"},
+    {"name": "Boomerang"},
+    {"name": "SwitchHook"},
+    {"name": "LongSwitch"},
+    {"name": "Shovel"},
+    {"name": "StrangeFlute"},
+    {"name": "DimitrisFlute"},
+    {"name": "MooshsFlute"},
+    {"name": "RickysFlute"}
+  ],
+  "expansionItems": [
+    {
+      "name": "HeartContainer",
+      "resource": "heartContainers",
+      "resourceAmount": 1
+    },
+    {
+      "name": "Bombs",
+      "resource": "bombs",
+      "resourceAmount": 1
+    },
+    {
+      "name": "Bombchus",
+      "resource": "bombchus",
+      "resourceAmount": 1
+    },
+    {
+      "name": "EmberSeeds",
+      "resource": "emberSeeds",
+      "resourceAmount": 1
+    },
+    {
+      "name": "ScentSeeds",
+      "resource": "scentSeeds",
+      "resourceAmount": 1
+    },
+    {
+      "name": "PegasusSeeds",
+      "resource": "pegasusSeeds",
+      "resourceAmount": 1
+    },
+    {
+      "name": "GaleSeeds",
+      "resource": "galeSeeds",
+      "resourceAmount": 1
+    },
+    {
+      "name": "MysterySeeds",
+      "resource": "mysterySeeds",
+      "resourceAmount": 1
+    }
+  ],
+  "gameFlags": [
+    "f_HasPossessedImpa",
+    "f_MovedTriforceBlockF9",
+    "f_TalkedToNayruGroupieBird",
+    "f_TalkedToNayruGroupieBunny",
+    "f_TalkedToNayruGroupieDude",
+    "f_TalkedToNayruGroupieMonkey",
+    "f_TalkedToNayruGroupieBear",
+    "f_MetNayru",
+    "f_SavedImpa"
+  ]
+}

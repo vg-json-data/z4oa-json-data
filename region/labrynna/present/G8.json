@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schema/z3oa-room.schema.json",
+  "id": "G8",
+  "name": "Lynna Shop",
+  "area": "Labrynna",
+  "subarea": "Lynna City",
+  "time": "Present",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "North Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 2,
+      "name": "West Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 3,
+      "name": "South Transition",
+      "nodeType": "transition"
+    },
+    {
+      "id": 4,
+      "name": "East Transition",
+      "nodeType": "transition"
+    },
+    {"id": 5, "name": "Sign", "nodeType": "sign"},
+    {
+      "id": 6,
+      "name": "Lynna Shop",
+      "nodeType": "entrance"
+    }
+  ],
+  "enemies": [],
+  "links": [
+    {
+      "from": 1,
+      "to": [
+        {"id": 2}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

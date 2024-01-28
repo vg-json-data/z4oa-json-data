@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema/z3oa-helpers.schema.json",
+  "helperCategories": [
+    {
+      "name": "Game Flags",
+      "helpers": [
+        {
+          "name": "h_canMeetNayru",
+          "description": "#FIXME: Needs to talk to all groupies. Skip and just rely on Possessed Impa for ease of initial release.",
+          "requires": [
+            {"or": [
+              {"and": [
+                "f_TalkedToNayruGroupieBird",
+                "f_TalkedToNayruGroupieBunny",
+                "f_TalkedToNayruGroupieDude",
+                "f_TalkedToNayruGroupieMonkey",
+                "f_TalkedToNayruGroupieBear"
+              ]},
+              "f_HasPossessedImpa"
+            ]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Weapons",
+      "helpers": [
+        {
+          "name": "h_sword",
+          "requires": [
+            {"or": [
+              "WoodenSword",
+              "NobleSword",
+              "MasterSword",
+              "BiggoronsSword"
+            ]}
+          ]
+        },
+        {
+          "name": "h_canUseEmberSeeds",
+          "requires": [
+            "SeedSatchel",
+            "EmberSeeds"
+          ]
+        },
+        {
+          "name": "h_burnTrees",
+          "requires": [
+            "h_canUseEmberSeeds"
+          ]
+        },
+        {
+          "name": "h_cutBushes",
+          "requires": [
+            "h_sword"
+          ]
+        }
+      ]
+    }
+  ]
+}

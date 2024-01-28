@@ -1,0 +1,149 @@
+{
+  "$schema": "../../../schema/z3oa-room.schema.json",
+  "id": "F7",
+  "name": "Nayru's Grotto",
+  "area": "Labrynna",
+  "subarea": "",
+  "time": "Present",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Southwest Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 2,
+      "name": "Southeast Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 3,
+      "name": "Nayru",
+      "nodeType": "npc",
+      "locks": [
+        {
+          "name": "Meet Nayru",
+          "lockType": "gameFlag",
+          "lock": [],
+          "unlockStrats": [
+            {
+              "name": "Talk to Groupies",
+              "requires": [
+                "h_canMeetNayru"
+              ]
+            }
+          ],
+          "yields": ["f_MetNayru", "f_SavedImpa"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Impa",
+      "nodeType": "item",
+      "nodeSubType": "npc",
+      "nodeItem": "WoodenSword"
+    }
+  ],
+  "enemies": [],
+  "links": [
+    {
+      "from": 1,
+      "to": [
+        {"id": 2},
+        {"id": 3},
+        {"id": 4}
+      ]
+    },
+    {
+      "from": 2,
+      "to": [
+        {"id": 1},
+        {"id": 3},
+        {"id": 4}
+      ]
+    },
+    {
+      "from": 3,
+      "to": [
+        {"id": 1},
+        {"id": 2},
+        {"id": 4}
+      ]
+    },
+    {
+      "from": 4,
+      "to": [
+        {"id": 1},
+        {"id": 2}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [1, 4],
+      "name": "Base",
+      "requires": [
+        "f_SavedImpa"
+      ]
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 4],
+      "name": "Base",
+      "requires": [
+        "f_SavedImpa"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 4],
+      "name": "Base",
+      "requires": [
+        "f_SavedImpa"
+      ]
+    },
+    {
+      "link": [4, 1],
+      "name": "Base",
+      "reqiures": []
+    },
+    {
+      "link": [4, 2],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

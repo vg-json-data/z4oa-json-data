@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/z3oa-room.schema.json",
+  "id": "F10",
+  "name": "",
+  "area": "Labrynna",
+  "subarea": "",
+  "time": "Present",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "West Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 2,
+      "name": "South Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    }
+  ],
+  "enemies": [],
+  "links": [
+    {
+      "from": 1,
+      "to": [
+        {"id": 2}
+      ]
+    },
+    {
+      "from": 2,
+      "to": [
+        {"id": 1}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

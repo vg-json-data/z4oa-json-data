@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schema/z3oa-room.schema.json",
+  "id": "H1",
+  "name": "",
+  "area": "Labrynna",
+  "subarea": "",
+  "time": "Present",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "",
+      "nodeType": "",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 2,
+      "name": "",
+      "nodeType": "",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    }
+  ],
+  "enemies": [],
+  "links": [
+    {
+      "from": 1,
+      "to": [
+        {"id": 2}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Base",
+      "requires": []
+    }
+  ]
+}

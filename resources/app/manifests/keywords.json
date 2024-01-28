@@ -1,0 +1,62 @@
+{
+  "areas": [
+    "labrynna"
+  ],
+  "enemies": {
+    "enemyById": {},
+    "enemyByName": {}
+  },
+  "flags": [
+    "f_HasPossessedImpa",
+    "f_MetNayru",
+    "f_MovedTriforceBlockF9",
+    "f_SavedImpa",
+    "f_TalkedToNayruGroupieBear",
+    "f_TalkedToNayruGroupieBird",
+    "f_TalkedToNayruGroupieBunny",
+    "f_TalkedToNayruGroupieDude",
+    "f_TalkedToNayruGroupieMonkey"
+  ],
+  "helpers": [
+    "h_burnTrees",
+    "h_canMeetNayru",
+    "h_canUseEmberSeeds",
+    "h_cutBushes",
+    "h_sword"
+  ],
+  "items": [
+    "BiggoronsSword",
+    "Bombchus",
+    "Bombs",
+    "Boomerang",
+    "DimitrisFlute",
+    "EmberSeeds",
+    "GaleSeeds",
+    "GreenMail",
+    "HeartContainer",
+    "IronShield",
+    "LongSwitch",
+    "MasterSword",
+    "MermaidSuit",
+    "MirrorShield",
+    "MooshsFlute",
+    "MysterySeeds",
+    "NobleSword",
+    "PegasusSeeds",
+    "PowerBracelet",
+    "PowerGlove",
+    "RickysFlute",
+    "RocsFeather",
+    "ScentSeeds",
+    "SeedSatchel",
+    "Shovel",
+    "StrangeFlute",
+    "SwitchHook",
+    "WoodenShield",
+    "WoodenSword",
+    "ZoraScale",
+    "ZorasFlippers"
+  ],
+  "techs": [],
+  "weapons": []
+}

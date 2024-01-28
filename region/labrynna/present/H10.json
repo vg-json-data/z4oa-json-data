@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schema/z3oa-room.schema.json",
+  "id": "H10",
+  "name": "North of Start",
+  "area": "Labrynna",
+  "subarea": "",
+  "time": "Present",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "North Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 2,
+      "name": "West Transition",
+      "nodeType": "transition",
+      "nodeSubType": "",
+      "nodeAddress": ""
+    },
+    {
+      "id": 3,
+      "name": "South Transition",
+      "nodeType": "transition"
+    }
+  ],
+  "enemies": [],
+  "links": [
+    {
+      "from": 1,
+      "to": [
+        {"id": 2},
+        {"id": 3}
+      ]
+    },
+    {
+      "from": 2,
+      "to": [
+        {"id": 1},
+        {"id": 3}
+      ]
+    },
+    {
+      "from": 3,
+      "to": [
+        {"id": 1},
+        {"id": 2}
+      ]
+    }
+  ],
+  "strats": [
+    {
+      "link": [1, 2],
+      "name": "Bushes",
+      "requires": [
+        "h_cutBushes"
+      ]
+    },
+    {
+      "link": [1, 3],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [2, 1],
+      "name": "Bushes",
+      "requires": [
+        "h_cutBushes"
+      ]
+    },
+    {
+      "link": [2, 3],
+      "name": "Bushes",
+      "requires": [
+        "h_cutBushes"
+      ]
+    },
+    {
+      "link": [3, 1],
+      "name": "Base",
+      "requires": []
+    },
+    {
+      "link": [3, 2],
+      "name": "Bushes",
+      "requires": [
+        "h_cutBushes"
+      ]
+    }
+  ]
+}
